@@ -7,13 +7,23 @@ const boxThree = document.getElementById('boxThree'); // target boxThree rgb()
 const buttonOne = document.getElementById('buttonOne').addEventListener('click', rgb);
 const buttonTwo = document.getElementById('buttonTwo').addEventListener('click', hsl);
 const buttonThree = document.getElementById('buttonThree').addEventListener('click', rgbTwo);
+const buttonMystery = document.getElementById('buttonMystery');
 
 let r, g, b, h, s, l;
 
-// handler - see above handlers are attached to the button variables
+// handler for individual buttons - see above handlers are attached to the button variables
 
+
+// handler for master button
+buttonMystery.addEventListener('click', master);
 
 // functions
+
+function master() {
+    rgb();
+    hsl();
+    rgbTwo();
+}
 
 function rgb() {
     r = Math.floor(Math.random() * 16).toString(16);
