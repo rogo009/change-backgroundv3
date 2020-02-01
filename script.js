@@ -1,14 +1,19 @@
 //variables
 
-const boxOne = document.getElementById('boxOne'); // target box1 #rgb
+const boxOne = document.getElementById('boxOne'); // target boxOne #rgb
+const boxTwo = document.getElementById('boxTwo'); // target boxTwo hsl()
+const boxThree = document.getElementById('boxThree'); // target boxThree rgb()
+
 const buttonOne = document.getElementById('buttonOne').addEventListener('click', rgb);
+const buttonTwo = document.getElementById('buttonTwo').addEventListener('click', hsl);
+const buttonThree = document.getElementById('buttonThree').addEventListener('click', rgbTwo);
 
-let r, g, b;
+let r, g, b, h, s, l;
 
-// handler - see above
+// handler - see above handlers are attached to the button variables
 
 
-// function
+// functions
 
 function rgb() {
     r = Math.floor(Math.random() * 16).toString(16);
@@ -20,10 +25,19 @@ function rgb() {
 }
 
 function hsl() {
-    h = Math.floor(Math.random() * 16).toString(16);
-    s = Math.floor(Math.random() * 16).toString(16);
-    l = Math.floor(Math.random() * 16).toString(16);
-    color = `#${h}${s}${l}`;
+    h = Math.floor(Math.random() * 360).toString();
+    s = Math.floor(Math.random() * 101).toString();
+    l = Math.floor(Math.random() * 101).toString();
+    color = `hsl(${h}, ${s}%, ${l}%)`;
     boxTwo.textContent = color;
     boxTwo.style.backgroundColor = color;
+}
+
+function rgbTwo() {
+    r = Math.floor(Math.random() * 256).toString();
+    g = Math.floor(Math.random() * 256).toString();
+    b = Math.floor(Math.random() * 256).toString();
+    color = `rgb(${r}, ${g}, ${b})`;
+    boxThree.textContent = color;
+    boxThree.style.backgroundColor = color;
 }
