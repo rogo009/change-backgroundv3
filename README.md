@@ -6,6 +6,8 @@ This small project was a lot of fun to make. My goal was to continue practicing 
 
 Notes: 
 
-implemented math functions into simple random color generator in several color formats. 
-can attach event listeners to button variables instead of creating separate handlers, practiced creating functions to manipulate DOM. 
-implemented a "master" function to change the bg color of all boxes at once, by feeding into one master function
+##implemented math functions into simple random color generator in several color formats. 
+
+##can attach event listeners to button variables instead of creating separate handlers, practiced creating functions to manipulate DOM. 
+
+##implemented a "master" function to change the bg color of all boxes at once, by feeding into one master function and attaching to master button via separate event handler
