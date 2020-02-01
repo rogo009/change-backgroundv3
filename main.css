@@ -5,24 +5,14 @@ body {
 }
 
 h1 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    margin: 20px;
 }
 
 button {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     font-size: 1em;
     font-weight: 500;
     padding: 20px 30px;
@@ -34,6 +24,7 @@ button {
     transition: background-color .5s;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 20px;
 }
 
 button:hover {
@@ -48,16 +39,17 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-#box1,
-#box2,
-#box3,
-#box4,
-#box5 {
+#boxOne,
+#boxTwo {
+    display: flex;
     border: 1px solid black;
-    height: 150px;
-    width: 150px;
+    border-radius: 10px;
+    height: 145px;
+    width: 145px;
+    margin: 20px;
 }
 
 .title {
     font-size: 2em;
+    padding: 10px 0px 0px 10px;
 }
