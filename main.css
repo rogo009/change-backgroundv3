@@ -14,6 +14,7 @@ a:hover {
 }
 
 h1 {
+    font-size: 3em;
     margin: 40px;
     text-align: center;
 }
@@ -21,9 +22,9 @@ h1 {
 button {
     font-size: 1.2em;
     font-weight: 500;
-    padding: 20px 20px;
-    width: 215px;
-    border-radius: 10px;
+    padding: 12px 20px;
+    width: 230px;
+    border-radius: 8px;
     background-color: #ccc;
     border: .8px solid grey;
     outline: none;
@@ -35,8 +36,9 @@ button {
 }
 
 button:hover {
-    opacity: 50%;
+    /* opacity: 50%; */
     color: black;
+    border-bottom: 1.5px solid black;
 }
 
 footer {
@@ -52,8 +54,8 @@ footer {
     display: flex;
     border: 1.3px solid black;
     border-radius: 10px;
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     margin: 20px;
     box-shadow: 8px 10px gainsboro;
 }
